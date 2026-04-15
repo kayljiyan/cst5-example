@@ -13,7 +13,8 @@ function login($email, $password) {
     if ($email === $userEmail && password_verify($password, $hashedPassword)) {
         // instead of using echo to display code blocks, use a variable
         // to hold the message values.
-        $message = "Login Successful! Welcome admin!";
+        header("Location: test");
+        die();
     } else {
         $errors = "Invalid email or password.";
     }
