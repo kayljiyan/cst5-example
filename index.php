@@ -1,4 +1,14 @@
 <?php
+// session_start();
+
+// if (isset($_SESSION["username"])) {
+//     header("Location: test");
+// }
+
+if (isset($_COOKIE["username"])) {
+    header("Location: test");
+}
+
 $errors = ""; // this holds the multiple errors that may happen during execution
 $message = ""; // this holds the success message when login is successful
 
@@ -13,6 +23,8 @@ function login($email, $password) {
     if ($email === $userEmail && password_verify($password, $hashedPassword)) {
         // instead of using echo to display code blocks, use a variable
         // to hold the message values.
+        // $_SESSION["username"] = $email;
+        setcookie("username", $email, time() + 86400);
         header("Location: test");
         die();
     } else {

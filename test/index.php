@@ -1,4 +1,16 @@
 <?php
+// session_start();
+
+// if (!isset($_SESSION["username"])) {
+//     header("Location: ..");
+//     die();
+// }
+
+if (!isset($_COOKIE["username"])) {
+    header("Location: ..");
+    die();
+}
+
 // indexed array
 $cars = array("Volvo", "BMW", "Toyota");
 // dumps info about the array
