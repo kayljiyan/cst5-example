@@ -6,13 +6,16 @@
 
 ```html
 <!DOCTYPE html>
+
 <html lang="en">
+  <!-- will be parsed as HTML -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page Title</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <!-- Content goes here -->
   </body>
@@ -25,9 +28,13 @@
 
 ```html
 <h1>Heading</h1>
+<!-- Titles, Subtext, reminder text -->
 <p>Paragraph</p>
+<!-- default font size -->
 <strong>Bold</strong>
+<!-- bold the text -->
 <em>Italic</em>
+<!-- italicize your text -->
 ```
 
 #### Links & Images
@@ -41,10 +48,13 @@
 
 ```html
 <ul>
+  <!-- unordered / bullet point -->
   <li>Item 1</li>
+  <!-- list item -->
 </ul>
 
 <ol>
+  <!-- ordered / numbering -->
   <li>Item 1</li>
 </ol>
 ```
@@ -63,12 +73,17 @@
 
 ```html
 <table>
+  <!-- initializes the table -->
   <tr>
+    <!-- table row -->
     <th>Name</th>
+    <!-- table heading -->
     <th>Email</th>
   </tr>
+
   <tr>
     <td>John</td>
+    <!-- table data -->
     <td>john@email.com</td>
   </tr>
 </table>
